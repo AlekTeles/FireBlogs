@@ -30,6 +30,19 @@ export default new Vuex.Store({
     profileInitials: null,
   },
   mutations: {
+    newBlogPost(state, payload) {
+      state.blogHTML = payload;
+      console.log(state.blogHTML);
+    },
+    updateBlogTitle(state, payload) {
+      state.blogTitle = payload;
+    },
+    fileNameChange(state , payload) {
+      state.blogPhotoName = payload;
+    },
+    createFileURL(state , payload) {
+      state.blogPhotoFileURL = payload;
+    },
     toggleEditPost(state, payload) {
       state.editPost = payload;
       console.log(state.editPost);
@@ -37,7 +50,6 @@ export default new Vuex.Store({
     updateUser(state, payload) {
       state.user = payload
     },
-
     setProfileAdmin(state, payload) {
       state.profileAdmin = payload;
       console.log(state.profileAdmin);

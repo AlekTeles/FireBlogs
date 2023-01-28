@@ -7,7 +7,7 @@ import Register from "../views/Register.vue";
 import Forgotpassword from "../views/ForgotPassword.vue";
 import Profile from "../views/Profile.vue";
 import Admin from "../views/Admin.vue";
-import CreatePost from "../views/CreatePost";
+import CreatePost from "../views/CreatePost.vue";
 Vue.use(VueRouter);
 
 const routes = [
